@@ -14,7 +14,7 @@ jobs:
     - name: Get SDK Version
       shell: bash
       run: |
-        VERSION=$(curl -s https://content.vexrobotics.com/vexos/public/V5/vscode/sdk/cpp/manifest.json |grep latest |grep -o "V5[^\"]*")  
+        echo "VERSION=$(curl -s https://content.vexrobotics.com/vexos/public/V5/vscode/sdk/cpp/manifest.json |grep latest |grep -o "V5[^\"]*")" >> "$GITHUB_ENV"  
     - name: Download SDK
       uses: wei/curl@master
       with: 
