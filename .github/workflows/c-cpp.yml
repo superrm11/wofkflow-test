@@ -18,7 +18,7 @@ jobs:
     - name: Download SDK
       uses: wei/curl@master
       with: 
-        args: https://content.vexrobotics.com/vexos/public/V5/vscode/sdk/cpp/$VERSION.zip --output sdk.zip
+        args: https://content.vexrobotics.com/vexos/public/V5/vscode/sdk/cpp/${{ env.VERSION }}.zip --output sdk.zip
     - name: Unzip SDK
       uses: montudor/action-zip@v1
       with:
