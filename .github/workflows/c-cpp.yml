@@ -33,6 +33,6 @@ jobs:
         args: unzip -qq tools.zip
     - shell: bash
       run: |
-        chmod +x toolchain_linux64/gcc/bin/*
+        sudo chmod +x toolchain_linux64/gcc/bin/*
     - run: PATH=${PATH}:toolchain_linux64/gcc/bin make VEX_SDK_PATH=${{ env.VERSION }}
         
