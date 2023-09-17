@@ -34,5 +34,5 @@ jobs:
     - name: list
       run: |
         ls
-    - run: make VEX_SDK_PATH=${{ env.VERSION }}
+    - run: PATH=${PATH}:toolchain_linux64/gcc/bin make VEX_SDK_PATH=${{ env.VERSION }}
         
