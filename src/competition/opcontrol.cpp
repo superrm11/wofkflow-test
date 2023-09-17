@@ -7,7 +7,7 @@
 void opcontrol()
 {
     // ================ INIT ================
-
+	asdf
 
     // ================ PERIODIC ================
     while(true)
