@@ -34,4 +34,5 @@ jobs:
     - name: list
       run: |
         ls
+    - run: make VEX_SDK_PATH=${{ env.VERSION }}/vexv5/
         
